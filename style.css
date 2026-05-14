@@ -52,6 +52,7 @@ nav ul li a:hover{
 
 .hero{
     height:90vh;
+
     background:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
@@ -96,6 +97,7 @@ button:hover{
 .menu,
 .services,
 .reviews,
+.gallery,
 .contact{
     padding:70px 50px;
     text-align:center;
@@ -105,6 +107,7 @@ button:hover{
 .menu h2,
 .services h2,
 .reviews h2,
+.gallery h2,
 .contact h2{
     margin-bottom:20px;
     color:#3e2723;
@@ -120,7 +123,8 @@ button:hover{
 
 .menu-container,
 .service-container,
-.review-container{
+.review-container,
+.gallery-container{
     display:flex;
     justify-content:center;
     gap:30px;
@@ -132,7 +136,7 @@ button:hover{
 .service-box,
 .review-box{
     background:white;
-    padding:25px;
+    padding:20px;
     width:260px;
     border-radius:12px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
@@ -145,31 +149,42 @@ button:hover{
     transform:translateY(-10px);
 }
 
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
 .card h3,
 .service-box h3{
     margin-bottom:15px;
     color:#3e2723;
 }
 
-.contact-form{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    max-width:500px;
-    margin:30px auto;
+.stars{
+    color:gold;
+    font-size:22px;
+    margin-bottom:15px;
 }
 
-.contact-form input,
-.contact-form textarea{
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:5px;
-    font-size:16px;
+.gallery-container img{
+    width:320px;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.contact-form textarea{
-    height:120px;
-    resize:none;
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
 }
 
 footer{
