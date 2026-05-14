@@ -163,6 +163,12 @@ button:hover{
     color:#3e2723;
 }
 
+.card h4{
+    margin-top:15px;
+    color:#ff9800;
+    font-size:22px;
+}
+
 .stars{
     color:gold;
     font-size:22px;
